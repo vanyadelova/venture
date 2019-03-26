@@ -1,34 +1,45 @@
 {
-  "name": "venture",
-  "version": "0.1.0",
+  "name": "meanImageEditor",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.18.0",
-    "babel-cli": "^6.26.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.19",
-    "nodemon": "^1.18.10",
-    "react": "^16.8.5",
-    "react-bootstrap": "^1.0.0-beta.6",
-    "react-dom": "^16.8.5",
-    "react-modal": "^3.8.1",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node ./bin/www",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.5",
+    "express-session": "^1.15.6",
+    "history": "^4.7.2",
+    "http-errors": "^1.7.2",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^4.13.18",
+    "morgan": "~1.9.0",
+    "react-router-dom": "^4.2.2",
+    "serve-favicon": "~2.4.5",
+    "superagent": "^4.1.0",
+    "yelp-fusion": "^2.0.3"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "description": "A full-stack MERN app created by Winston Summers, Tony Phan and Sweeney Arnett",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanyadelova/venture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanyadelova/venture/issues"
+  },
+  "homepage": "https://github.com/vanyadelova/venture#readme",
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "jest": "^24.5.0"
+  }
 }
