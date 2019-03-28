@@ -1,5 +1,5 @@
 {
-  "name": "meanImageEditor",
+  "name": "venture",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -25,7 +25,7 @@
     "superagent": "^4.1.0",
     "yelp-fusion": "^2.0.3"
   },
-  "description": "A full-stack MERN app created by Winston Summers, Tony Phan and Sweeney Arnett",
+  "description": "A full-stack MERN app created by Vanya Delova",
   "main": "app.js",
   "repository": {
     "type": "git",
